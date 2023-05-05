@@ -38,9 +38,14 @@ body h1{
     justify-content: space-between;
     align-items: center;   
 }
-@media screen and (max-width: 580px) {
-    #card-holder{
-        width: 100%;    
+@media screen and (max-width: 480px) {
+    #card-holder{       
+       display: flex;
+       flex-flow: column wrap;  
+    width: 100%;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;   
     }
     #card{       
         width: 84%;
