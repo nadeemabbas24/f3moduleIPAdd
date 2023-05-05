@@ -18,7 +18,7 @@ document.getElementById("get-btn").addEventListener("click",(e)=>{
     document.getElementById("container").style.display = "block"
 
           if (navigator.geolocation) {
-          navigator.geolocation.getCurrentPosition(position=>{
+          navigator.geolocation.getCurrentPosition((position,showError)=>{
             let lat = position.coords.latitude;
             let lon = position.coords.longitude;            
             document.getElementById("lat").innerText = lat; 
@@ -27,7 +27,7 @@ document.getElementById("get-btn").addEventListener("click",(e)=>{
             document.getElementById("map").src = `https://maps.google.com/maps?q=${lat}, ${lon}&output=embed`
           });
         } else {
-          x.innerHTML = "Geolocation is not supported by this browser.";
+          alert("Geolocation is not supported by this browser.");
         }
     
     document.getElementById("ip").innerText = ip;
@@ -105,6 +105,23 @@ document.getElementById("search").addEventListener("input", (e)=>{
     displayPostOffice(poffice, cardholder);
 
 })
+
+function showError(error){
+    switch(error.code){
+        case error.PERMISSION_DENIED:
+            alert("User denied the request for Geolocation.")
+        break;
+        case error.POSITION_UNAVAILABLE:
+            alert("Location information is unavailable.")
+        break;
+        case error.TIMEOUT:
+            alert("The request to get user location timed out.")
+        break;
+        case error.UNKNOWN_ERROR:
+            alert("An unknown error occurred.")
+        break;
+    }
+}
 
 
 
