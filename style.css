@@ -47,6 +47,12 @@ body h1{
         justify-content: space-between;
         align-items: center;   
     }
+    #card{
+        border:1px solid black;
+        width: 100%;
+        border-radius: 8px;
+        padding: 20px;
+    }
   }
 #get-btn{
     border: none;
