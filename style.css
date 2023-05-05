@@ -1,0 +1,50 @@
+
+body h1{
+    
+    margin: 30px 0 0 30px;
+}
+#container{
+    font-size: 1.3rem;
+    font-family: sans-serif;
+    margin: 30px;
+}
+#container p{
+   font-weight: 600;
+}
+#container span{
+    font-weight: 300;
+}
+#map{
+    width: 100%;
+}
+#card{
+    border:1px solid black;
+    width: 540px;
+    border-radius: 8px;
+    padding: 20px;
+}
+#search{
+    height: 40px;
+    width: 100%;
+    margin: 20px 0;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    padding: 10px;
+}
+#card-holder{
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+#get-btn{
+    border: none;
+    background-color: black;
+    color: white;
+    width: 200px;
+    padding: 10px;
+    font-size: 1.2rem;
+    margin: 30px;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>MY PUBLIC IP ADDRESS: <span id="ip"></span></h1>
+    <button id = 'get-btn'>GET DATA</button>
+    <div id="container">
+    <div id="details">
+        <p>Lat: <span id="lat"></span></p>
+        <p>City: <span id="city"></span></p>
+        <p>Organization: <span id="org"></span></p>
+        <p>Long: <span id="long"></span></p>
+        <p>Region: <span id="region"></span></p>
+        <p>Hostname: <span id="host"></span></p>
+    </div>
+    <iframe id="map" height="400" frameborder="0" style="border:0"></iframe>
+    <div class="details2">
+        <p>Time Zone: <span id="timezone"></span></p>
+        <p>Date And Time: <span id="datetime"></span></p>
+        <p>Pincode: <span id="pincode"></span></p>
+        <p>Message: <span id="message"></span></p>
+    </div>
+    <input id="search" type="search">
+</div>
+    <script src="index.js"></script>
+    <script src=
+    "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+        </script>
+</body>
+</html>
