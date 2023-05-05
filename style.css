@@ -36,9 +36,18 @@ body h1{
     width: 100%;
     gap: 20px;
     justify-content: space-between;
-    align-items: center;
-   
+    align-items: center;   
 }
+@media screen and (max-width: 480px) {
+    #card-holder{
+        display: flex;
+        width: 100%;
+        gap: 20px;
+        flex-flow: column wrap;
+        justify-content: space-between;
+        align-items: center;   
+    }
+  }
 #get-btn{
     border: none;
     background-color: black;
